@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--至id-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>test_3</title>
+        <!--利用类定义CSS样式-->
+        <style>
+            .cities{
+                background-color: gray;
+                color:white;
+                margin: 20px;
+                padding: 20px;
+            }
+        </style>
+        <style>
+            span.red{color: red;}
+        </style>
+        <!--id必须唯一，且对大小写敏感，至少一个字符（无空白字符）
+            通过#+id{CSS属性}实现，见下-->
+        <style>
+            #myHeader{
+                background-color: lightblue;
+                color:black;
+                padding:40px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <!--块元素-->
+        <div>div块元素，在前后显示折行，与CSS一同使用可对大块内容设置样式属性</div>
+        <span class="red">span内联元素，不换行，部分设置属性</span>
+        <p>以上均为容器，本身无意义</p>
+        <div class="cities">
+            <h>Hello!</h>
+            <P>hello HTML!!!</P>
+        </div>
+        <h1 id="myHeader">My Header</h1>
+
+    </body>
+</html>
+<!--class与id区别：id唯一，只能为一个元素所用，class可以为多个元素所用-->
